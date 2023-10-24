@@ -18,36 +18,53 @@
             "project_name": "Data Pagination and Filtering",
             "description": "An application that displays an array of students; displays different pages; and allows the user to navigate the pages and search the directory.",
             "technologies": ["HTML", "JavaScript", "CSS", "Github"],
-            "live_link": "",
+            "live_link": "https://adelinendacyayisenga.github.io/Data-Pagination-and-Filtering/",
             "github_link": "https://github.com/AdelineNdacyayisenga/Data-Pagination-and-Filtering",
-            "image_urls":
+            "image_urls": [
+                "/images/paginationM.png",
+                "/images/pagination1.png",
+                "/images/pagination2.png"
+            ]
         },
         {
             "id": 2,
             "project_name": "Interactive Form",
-            "description": ,
+            "description": "Interactive registration form, that checks validation of user input, provides custom errors and directions to for the user, and allows submission of the form.",
             "technologies": ["HTML", "JavaScript", "CSS", "Github"],
-            "live_link":,
-            "github_link":,
-            "image_urls":
+            "live_link": "https://adelinendacyayisenga.github.io/Interactive-Form/",
+            "github_link": "https://github.com/AdelineNdacyayisenga/Interactive-Form",
+            "image_urls": [
+                "/images/interactiveFormM.png",
+                "/images/form1.png",
+                "/images/form2.png"
+            ]
         },
         {
             "id": 3,
             "project_name": "Object Oriented Programming Game Show App",
-            "description": ,
+            "description": "A browser-based, word guessing game. Using JavaScript and Object-Oriented Programming to select a random, hidden phrase, which a player tries to guess, by clicking letters on a screen and/or keyboard.",
             "technologies": ["HTML", "JavaScript", "CSS", "Github"],
-            "live_link":,
-            "github_link":,
-            "image_urls":
+            "live_link": "https://adelinendacyayisenga.github.io/Object-Oriented-Programming-Game-Show-App/",
+            "github_link": "https://github.com/AdelineNdacyayisenga/Object-Oriented-Programming-Game-Show-App",
+            "image_urls": [
+                "/images/gameM.png",
+                "/images/gameM1.png",
+                "/images/gameM2.png",
+                "/images/gameM3.png"
+            ]
         },
         {
             "id": 4,
             "project_name": "Public API Requests",
-            "description": ,
+            "description": "An app for employees to share contact information. By clicking on each employee card, you get more information about the employee. Can move around the directory by using the next and prev button. The displayed card closes by clicking a button or outside the displayed card.",
             "technologies": ["HTML", "JavaScript", "CSS", "Github"],
-            "live_link":,
-            "github_link":,
-            "image_urls":
+            "live_link": "https://adelinendacyayisenga.github.io/Public-API-Requests/",
+            "github_link": "https://github.com/AdelineNdacyayisenga/Public-API-Requests",
+            "image_urls": [
+                "/images/apiM.png",
+                "/images/api1.png",
+                "/images/api2.png"
+            ]
         }
     ]
 }
