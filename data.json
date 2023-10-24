@@ -1,0 +1,53 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Random Quote Generator",
+            "description": "An app that displays random quotes each time a button is clicked. If the user doesn't click the button to show the next quote, the page loads a new page after 10 seconds.",
+            "technologies": ["HTML", "JavaScript", "CSS", "Github"],
+            "live_link": "https://adelinendacyayisenga.github.io/My-Random-Quote-Generator/",
+            "github_link": "https://github.com/AdelineNdacyayisenga/My-Random-Quote-Generator",
+            "image_urls": [
+                "/images/randomM.png",
+                "/images/randomM1.png",
+                "/images/randomM2.png"
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "Data Pagination and Filtering",
+            "description": "An application that displays an array of students; displays different pages; and allows the user to navigate the pages and search the directory.",
+            "technologies": ["HTML", "JavaScript", "CSS", "Github"],
+            "live_link": "",
+            "github_link": "https://github.com/AdelineNdacyayisenga/Data-Pagination-and-Filtering",
+            "image_urls":
+        },
+        {
+            "id": 2,
+            "project_name": "Interactive Form",
+            "description": ,
+            "technologies": ["HTML", "JavaScript", "CSS", "Github"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        },
+        {
+            "id": 3,
+            "project_name": "Object Oriented Programming Game Show App",
+            "description": ,
+            "technologies": ["HTML", "JavaScript", "CSS", "Github"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        },
+        {
+            "id": 4,
+            "project_name": "Public API Requests",
+            "description": ,
+            "technologies": ["HTML", "JavaScript", "CSS", "Github"],
+            "live_link":,
+            "github_link":,
+            "image_urls":
+        }
+    ]
+}
