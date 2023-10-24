@@ -8,9 +8,9 @@
             "live_link": "https://adelinendacyayisenga.github.io/My-Random-Quote-Generator/",
             "github_link": "https://github.com/AdelineNdacyayisenga/My-Random-Quote-Generator",
             "image_urls": [
-                "/images/randomM.png",
-                "/images/randomM1.png",
-                "/images/randomM2.png"
+                "/static/images/randomM.png",
+                "/static/images/randomM1.png",
+                "/static/images/randomM2.png"
             ]
         },
         {
@@ -21,9 +21,9 @@
             "live_link": "https://adelinendacyayisenga.github.io/Data-Pagination-and-Filtering/",
             "github_link": "https://github.com/AdelineNdacyayisenga/Data-Pagination-and-Filtering",
             "image_urls": [
-                "/images/paginationM.png",
-                "/images/pagination1.png",
-                "/images/pagination2.png"
+                "/static/images/paginationM.png",
+                "/static/images/pagination1.png",
+                "/static/images/pagination2.png"
             ]
         },
         {
@@ -34,9 +34,9 @@
             "live_link": "https://adelinendacyayisenga.github.io/Interactive-Form/",
             "github_link": "https://github.com/AdelineNdacyayisenga/Interactive-Form",
             "image_urls": [
-                "/images/interactiveFormM.png",
-                "/images/form1.png",
-                "/images/form2.png"
+                "/static/images/interactiveFormM.png",
+                "/static/images/form1.png",
+                "/static/images/form2.png"
             ]
         },
         {
@@ -47,10 +47,10 @@
             "live_link": "https://adelinendacyayisenga.github.io/Object-Oriented-Programming-Game-Show-App/",
             "github_link": "https://github.com/AdelineNdacyayisenga/Object-Oriented-Programming-Game-Show-App",
             "image_urls": [
-                "/images/gameM.png",
-                "/images/gameM1.png",
-                "/images/gameM2.png",
-                "/images/gameM3.png"
+                "/static/images/gameM.png",
+                "/static/images/gameM1.png",
+                "/static/images/gameM2.png",
+                "/static/images/gameM3.png"
             ]
         },
         {
@@ -61,9 +61,9 @@
             "live_link": "https://adelinendacyayisenga.github.io/Public-API-Requests/",
             "github_link": "https://github.com/AdelineNdacyayisenga/Public-API-Requests",
             "image_urls": [
-                "/images/apiM.png",
-                "/images/api1.png",
-                "/images/api2.png"
+                "/static/images/apiM.png",
+                "/static/images/api1.png",
+                "/static/images/api2.png"
             ]
         }
     ]

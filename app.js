@@ -32,11 +32,12 @@ app.get('/projects/:id', (req, res, next) => {
 
     if (project) {
         //pass data to the project template
-        res.render('project', { project });
+        return res.render('project', { project });
     } else {
-        const err = new Error('Not Found');
-        err.status = 404;
-        next(err);
+        const error = new Error('Not Found');
+        error.status = 404;
+        //next(error);
+        res.render('page-not-found', { error });
     }
 });
 
@@ -44,21 +45,28 @@ app.get('/projects/:id', (req, res, next) => {
 
 //catch the 404 error to handle non-existent routes
 app.use( (req, res, next) => {
-    const err = new Error('Not Found');
-    err.status = 404;
-    err.message = 'Oops, page not found. Looks like that route does not exist.'
-    next(err);
+    const error = new Error('Not Found');
+    error.status = 404;
+    error.message = 'Oops, page not found. Looks like that route does not exist.'
+    res.render('page-not-found', { error });
 });
 
 //global error handler
 app.use( (err, req, res, next) => {
+
     //set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};
 
     //render the error page
     res.status(err.status || 500);
-    res.render('error');
+    //res.render('error);
+    if(err.status === 404) {
+        res.render('page-not-found');
+    } else {
+        res.render('error');
+    }
+    
 });
 
 //server running
