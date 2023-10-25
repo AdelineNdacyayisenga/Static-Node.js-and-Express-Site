@@ -5,7 +5,6 @@ var path = require('path');
 
 const data = require('./data.json'); //array of projects
 
-
 /* set up middleware */
 
 app.set('views', path.join(__dirname, 'views'));
