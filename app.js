@@ -55,6 +55,14 @@ app.use( (req, res, next) => {
     res.render('page-not-found', { error });
 });
 
+//test for the 500 error
+app.get('/', (req, res, next) => {
+    res.locals.projects = data.projects;
+    const error = new Error('Oops!');
+    error.status = 500;
+    next(error);
+});
+
 //global error handler
 app.use( (err, req, res, next) => {
 
