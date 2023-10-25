@@ -64,6 +64,7 @@ a {
   height: 100%;
   min-height: 100%;
   background: #fefefe;
+  
 }
 
 .flex-row-wrap {
@@ -82,7 +83,8 @@ a {
   width: 100%;
   max-width: 1200px;
   padding: 40px 50px 30px;
-  background: #fefefe;
+  /*background: #fefefe;*/
+  background:lightblue;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -137,7 +139,7 @@ nav a span {
   height: 100%;
   min-height: 100%;
   padding: 20px;
-  background: #000;
+  background:purple;
 }
 
 .sidebar-info-box {
@@ -146,6 +148,10 @@ nav a span {
 
 .thumbnail-box {
   padding: 0 10px;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
 }
 
 .sidebar .thumbnail {
@@ -176,7 +182,12 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555;
+  color: black;
+  
+}
+
+a:hover {
+  transform: scale(1.05);
 }
 
 .header {
@@ -361,4 +372,27 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
+}
+
+/*
+  About page wave animation
+  Credit: Jake Jarvis (https://jarv.is/notes/css-waving-hand-emoji/)
+*/
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
 }
