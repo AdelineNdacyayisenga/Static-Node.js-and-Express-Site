@@ -45,11 +45,11 @@ app.get('/projects', (req, res) => {
 
 /* error handling */
 
-//server error: non-existing routes
+//404 error handling: non-existing routes
 app.use( (req, res, next) => {
-    const error = new Error('Server Error');
-    //error.message = 'Oops, page not found. Looks like that route does not exist.'
-    //console.log(error.message);
+    const error = new Error('404 Error');
+    error.message = 'Oops, page not found. Looks like that route does not exist.'
+    error.status = 404;
     next(error);
 });
 
@@ -69,7 +69,7 @@ app.use( (err, req, res, next) => {
 
     } else {
         err.status = 500;
-        res.locals.message = "Oh! It looks like there was a server error."
+        res.locals.message = "Server Error"
         console.log('Oh! It looks like there was a server error.')
         res.render('error');
     }
