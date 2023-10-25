@@ -5,7 +5,6 @@ var path = require('path');
 
 const data = require('./data.json'); //array of projects
 
-//Q: the optionally step 6
 
 /* set up middleware */
 
@@ -35,7 +34,7 @@ app.get('/projects/:id', (req, res, next) => {
         return res.render('project', { project });
     } else {
         const error = new Error('Not Found');
-        error.status = 404;
+        //error.status = 404;
         next(error);
         //res.render('page-not-found', { error });
     }
@@ -50,17 +49,9 @@ app.get('/projects', (req, res) => {
 //catch the 404 error to handle non-existent routes
 app.use( (req, res, next) => {
     const error = new Error('Not Found');
-    error.status = 404;
     error.message = 'Oops, page not found. Looks like that route does not exist.'
+    console.log(error.message);
     res.render('page-not-found', { error });
-});
-
-//test for the 500 error
-app.get('/', (req, res, next) => {
-    res.locals.projects = data.projects;
-    const error = new Error('Oops!');
-    error.status = 500;
-    next(error);
 });
 
 //global error handler
@@ -74,8 +65,12 @@ app.use( (err, req, res, next) => {
     res.status(err.status || 500);
     //res.render('error);
     if(err.status === 404) {
+        err.status = 404;
+        console.log('Oops, page not found. Looks like that route does not exist.')
         res.render('page-not-found');
+
     } else {
+        err.status = 500;
         res.render('error');
     }
     
