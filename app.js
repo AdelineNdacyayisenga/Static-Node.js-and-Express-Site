@@ -36,9 +36,13 @@ app.get('/projects/:id', (req, res, next) => {
     } else {
         const error = new Error('Not Found');
         error.status = 404;
-        //next(error);
-        res.render('page-not-found', { error });
+        next(error);
+        //res.render('page-not-found', { error });
     }
+});
+
+app.get('/projects', (req, res) => {
+    res.redirect('/');
 });
 
 /* error handling */
