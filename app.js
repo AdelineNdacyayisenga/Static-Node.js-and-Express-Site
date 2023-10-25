@@ -34,7 +34,7 @@ app.get('/projects/:id', (req, res, next) => {
         return res.render('project', { project });
     } else {
         const error = new Error('Not Found');
-        //error.status = 404;
+        error.status = 404;
         next(error);
         //res.render('page-not-found', { error });
     }
@@ -51,6 +51,7 @@ app.use( (req, res, next) => {
     const error = new Error('Not Found');
     error.message = 'Oops, page not found. Looks like that route does not exist.'
     console.log(error.message);
+    error.status = 404;
     res.render('page-not-found', { error });
 });
 
